@@ -1,0 +1,7 @@
+<Bindings>
+  <Binding name="BIND1" runOnUp="true" header="MELBA_MACROS_HEADER">melba_macros.use_slayers_trinket()</Binding>
+  <Binding name="BIND2" runOnUp="true">melba_macros.use_deathwish()</Binding>
+  <Binding name="BIND3" runOnUp="true">melba_macros.dps_rotation_single_target_pool_rage()</Binding>
+  <Binding name="BIND4" runOnUp="true">melba_macros.sunderarmor()</Binding>
+  <Binding name="BIND5">melba_macros.apply_mark()</Binding>
+</Bindings>

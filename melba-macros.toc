@@ -1,0 +1,30 @@
+## Interface: 11200
+## Title: melba-macros
+## Notes: none
+## Author: melba
+## SavedVariablesPerCharacter:
+## RequiredDeps: Chronos
+env.lua
+
+
+string.lua
+table.lua
+display.lua
+debug.lua
+
+
+autoroll.lua
+bags.lua
+autoinvite.lua
+lfm.lua
+marks.lua
+casting.lua
+colorsay.lua
+combatlog.lua
+dumplogs.lua
+disenchant.lua
+twa.lua
+masterlooter.lua
+warriorcasting.lua
+warriorequip.lua
+melba-macros.lua
