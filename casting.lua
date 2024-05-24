@@ -16,7 +16,7 @@ function skip_trinket(itemLink)
 end
 
 function melba_macros.cast_nobuff(spellname, buffname)
-    local unit = UnitName("target")
+    -- local unit = UnitName("target")
     -- say(unit)
     if not IsShiftKeyDown() and global.Roids.HasBuffName(buffname, "target") then
         return
@@ -41,7 +41,6 @@ function melba_macros.cast_type_with_trinkets(spellname, cast_type)
     and not skip_trinket(GetInventoryItemLink("player", 13)) then
         SpellStopCasting();
         UseInventoryItem(13)
-        say('hi2')
         SpellStopCasting();
     else
         cast_fn(spellname)

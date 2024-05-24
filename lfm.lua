@@ -103,7 +103,7 @@ function melba_macros.lfm_mc(needtxt)
     end
 
     local msg = 'LFM ' .. needtxt .. ' for MC ' .. dayname .. ' ' 
-        .. string.format("%02d", goaldt.hour) .. ':' .. string.format("%02d", goaldt.min) .. ' ST (in' .. days_remaining_fmt .. hours_remaining_fmt .. minutes_remaining_fmt .. ') 1sr>ms>os+1 || signups https://discord.gg/88uqpc7 || blue or better gear'
+        .. string.format("%02d", goaldt.hour) .. ':' .. string.format("%02d", goaldt.min) .. ' UTC (in' .. days_remaining_fmt .. hours_remaining_fmt .. minutes_remaining_fmt .. ') 1sr>ms>os+1 || signups https://discord.gg/88uqpc7 || blue or better gear'
     -- LFM for MC in 1 hr. https://discord.gg/88uqpc7 | blue or better gear
     -- LFM for MC in 50min. https://discord.gg/88uqpc7 | blue or better gear
     -- LFM for MC now. in https://discord.gg/88uqpc7 | blue or better gear

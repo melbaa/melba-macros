@@ -36,6 +36,7 @@ end
 
 function melba_macros.sunderarmor()
     Roids.DoCast("!Attack");
+    Roids.DoCast("[stance:3 nomybuff:Battle Shout] Battle Shout");
     Roids.DoCast("Sunder Armor");
     if is_mh_1h() then Roids.DoCast("[mypower>50] Heroic Strike") end
 end
