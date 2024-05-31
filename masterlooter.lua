@@ -52,6 +52,7 @@ end
 global.SLASH_SOFTRESERVE1 = '/sr'
 global.SLASH_MAINSPEC1 = '/ms'
 global.SLASH_OFFSPEC1 = '/os'
+global.SLASH_CHECKSR1 = '/checksr'
 
 function global.SlashCmdList.SOFTRESERVE(msg)
     last_itemlink_rolled = ''
@@ -85,3 +86,17 @@ function global.SlashCmdList.OFFSPEC(msg)
     global.SlashCmdList.MASTERLOOTING(msg)
 end
 
+function global.SlashCmdList.CHECKSR(msg)
+    for i = 1, GetNumRaidMembers() do
+        if (GetRaidRosterInfo(i)) then
+            local n, _, _, _, _, _, z = GetRaidRosterInfo(i);
+            if global.LOOTRES_RESERVES[n] == nil then
+                local warnmsg = 'no SR for ' .. n
+                say(warnmsg)
+                if string.len(msg) ~= 0 then
+                    SendChatMessage(warnmsg, "RAID")
+                end
+            end
+        end
+    end
+end

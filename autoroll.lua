@@ -5,6 +5,7 @@ local AUTO_PASS_NAMES = {
     ["Blue Qiraji Resonating Crystal"]=true,
     ["Green Qiraji Resonating Crystal"]=true,
     ["Red Qiraji Resonating Crystal"]=true,
+    ["Skin of Shadow"]=true,
     ['Aquamarine']=true,
     ['Wicked Claw']=true,
     ['Deeprock Salt']=true,
@@ -23,6 +24,7 @@ local AUTO_PASS_NAMES = {
 }
 
 local AUTO_NEED_NAMES = {
+    ["Traveler's Backpack"]=true,
     ['Runecloth']=true,
     ['Essence of Earth']=true,
     ['Evil Bat Eye']=true,
