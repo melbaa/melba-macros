@@ -2,6 +2,8 @@ setfenv(1, melba_macros.env)
 
 local DEFAULT_CHAT_FRAME = global.DEFAULT_CHAT_FRAME
 
+display_lastmsg = ''
+display_lastts = 0
 
 function say(msg)
     DEFAULT_CHAT_FRAME:AddMessage("melba-macros: " .. (msg or "nil"))
@@ -19,6 +21,25 @@ function display(msg)
         global.MikSBT.DisplayMessage(msg, nil, false, .2, .7, .9)
     end
     print(msg)
+
+end
+
+function display_ratelimited(msg)
+    local ts = GetTime()
+
+    if msg ~= display_lastmsg then
+        display(msg)
+        display_lastmsg = msg
+        display_lastts = GetTime()
+        return
+    end
+
+    if ts >= display_lastts + 2 then
+        display(msg)
+        display_lastmsg = msg
+        display_lastts = GetTime()
+        return
+    end
 end
 
 
